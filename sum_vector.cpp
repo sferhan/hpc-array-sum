@@ -13,7 +13,7 @@ setup(int64_t N, uint64_t A[])
 {
    printf(" inside sum_vector problem_setup, N=%lld \n", N);
    for(int i=0; i<N; i++) {
-      A[i] = lrand48();
+      A[i] = i;
    }
 }
 
