@@ -35,6 +35,8 @@ set(CMAKE_BUILD_TYPE "Release")
 #
 #  start of cmake rules: you shouldn't need to modify anything below here
 
+add_compile_options(-O0)
+
 # common library target for benchmarking
 add_library(benchmark OBJECT benchmark.cpp)
 target_compile_features(benchmark PRIVATE cxx_std_11)
