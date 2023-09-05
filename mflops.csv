@@ -1,0 +1,9 @@
+# author: E. Wes Bethel, Oct 2022
+# sample data for use with the plot_3vars.py file
+Problem Size,Direct Sum,Vector Sum,InDirect Sum
+8388608,1062,943,75
+16777216,1062,945,70
+33554432,1062,942,67
+67108864,1062,949,66
+134217728,1062,950,65
+268435456,1063,949,65

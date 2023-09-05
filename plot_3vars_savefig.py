@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 plot_fname = "myplot.png"
 
-fname = "sample_data_3vars.csv"
+fname = "memory_band_opt.csv"
 df = pd.read_csv(fname, comment="#")
 print(df)
 
@@ -39,7 +39,7 @@ code3_time = df[var_names[3]].values.tolist()
 
 plt.figure()
 
-plt.title("Comparison of 3 Codes")
+plt.title("Analyzing Memory Bandwidth Utilization")
 
 xlocs = [i for i in range(len(problem_sizes))]
 
@@ -53,7 +53,7 @@ plt.plot(code3_time, "g-^")
 #plt.yscale("log")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("Avg Memory Latency")
+plt.ylabel("% Memory Bandwidth Utilization")
 
 varNames = [var_names[1], var_names[2], var_names[3]]
 plt.legend(varNames, loc="best")
